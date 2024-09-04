@@ -1,4 +1,13 @@
-header{
-    background-color: aliceblue
-    ;
+body{
+    font-family: 'Poppins';
+}
+
+.main-section{
+    display: flex;
+}
+
+.left-side{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
