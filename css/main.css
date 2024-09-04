@@ -57,18 +57,6 @@ header {
     cursor: pointer;
 }
 
-.brand-list {
-    display: none;
-}
-
-.brands {
-    display: none;
-}
-
-body {
-    font-family: 'Poppins';
-}
-
 .main-section {
     background-image: url(../assets/patterns/bg-pattern.svg);
 }
@@ -83,26 +71,26 @@ body {
     padding: 100px 0px 100px 0px;
 }
 
-.left-side {
+.main-content .left-side {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 0px;
 }
 
-.left-side h1 {
+.main-content .left-side h1 {
     font-size: 36px;
     width: 630px;
     font-weight: 500;
 }
 
-.left-side p {
+.main-content .left-side p {
     font-size: 17px;
     color: #9C9C9C;
     width: 550px;
 }
 
-.left-side button {
+.main-content .left-side button {
     align-items: center;
     justify-content: center;
     width: 150px;
