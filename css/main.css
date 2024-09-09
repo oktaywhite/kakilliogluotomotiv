@@ -119,6 +119,9 @@ header {
     margin: 50px 0;
     background-color: #161616;
     border-bottom: solid 5px #FF0040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .brand-items {
@@ -128,6 +131,7 @@ header {
     gap: 50px;
     list-style-type: none;
     padding: 20px 0;
+    width: 1400px;
 }
 
 .brand-item img {
@@ -136,9 +140,4 @@ header {
   
 .brand-item:hover img {
     filter: brightness(0) invert(0.65);
-}
-  
-
-.brands {
-    display: none;
 }
