@@ -82,12 +82,14 @@ header {
     font-size: 36px;
     width: 630px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .main-content .left-side p {
     font-size: 17px;
     color: #9C9C9C;
     width: 550px;
+    margin-bottom: 20px;
 }
 
 .main-content .left-side button {
