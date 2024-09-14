@@ -38,13 +38,18 @@ header {
 .navbar-items {
     list-style-type: none;
     display: flex;
-    color: #6F6F6F;
+    color: #888888;
     cursor: pointer;
     gap: 30px;
 }
 
+.navbar-items .navbar-item:hover {
+    color: #3b3b3b;
+}
+
 .navbar-items .active {
     color: #000;
+    font-weight: 500;
 }
 
 .navbar button {
@@ -55,6 +60,11 @@ header {
     border-radius: 3px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #545763;
 }
 
 .main-section {
@@ -104,6 +114,11 @@ header {
     border-radius: 3px;
     margin-top: 28px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-content .left-side button:hover {
+    background-color: #545763;
 }
 
 .main-section img {
@@ -215,6 +230,11 @@ header {
     padding: 10px 0;
     font-weight: 400;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-us-content button:hover {
+    background-color: rgb(223, 23, 73);
 }
 
 .services-section {
@@ -245,13 +265,6 @@ header {
     justify-content: space-between;
 }
 
-#location-img{
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
 .address{
     color: white;
     width: 290px;
@@ -270,6 +283,11 @@ header {
     margin-top: 20px;
     font-weight: 300;
     font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.address button:hover {
+    background-color: #3b3b3b;
 }
 
 .call-section{
@@ -291,7 +309,12 @@ header {
     height: 70px;
     border: solid 3px #171717;
     outline: 2px solid white;
-    font-size: 23px
+    font-size: 23px;
+    transition: all 0.3s ease;
+}
+
+.call-button:hover {
+    background-color: rgb(223, 23, 73);
 }
 
 .content-location{
@@ -304,6 +327,7 @@ header {
     display: flex;
     flex-direction: column;
     font-weight: 200;
+    font-size: 18px;
 }
 
 .call-text span{
