@@ -446,6 +446,7 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-bottom: 7px;
 }
 
 .services-section {
