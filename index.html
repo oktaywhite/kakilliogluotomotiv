@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -28,21 +28,20 @@
 
 <body>
     <header>
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="left-side">
                 <a href="#"><img id="logo" src="assets/logo.svg" alt="Kakillioğlu Otomotiv Logo"></a>
                 <ul class="navbar-items">
                     <li class="navbar-item active">Ana Sayfa</li>
-                    <li class="navbar-item">Hakkımızda</li>
-                    <li class="navbar-item">Hizmetler</li>
-                    <li class="navbar-item">Yorumlar</li>
-                    <li class="navbar-item">Blog</li>
+                    <li class="navbar-item"><a href="#brand-list">Hakkımızda</a></li>
+                    <li class="navbar-item"><a href="#go-services-section">Hizmetler</a></li>
+                    <li class="navbar-item"><a href="#contact-banner">Yorumlar</a></li>
                 </ul>
             </div>
-            <button><a href="#">İletişim</a></button>
+            <button><a href="#contact-section">İletişim</a></button>
         </div>
     </header>
-    <div class="main-section">
+    <div class="main-section" id="main-section">
         <div class="main-content">
             <div class="left-side">
                 <h1>Uzman Ekip ve Kaliteli Hizmetle Araç Servisi ve Bakımı</h1>
@@ -53,11 +52,11 @@
             </div>
             <img src="https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Car Engine">
-            <i class="fa-solid fa-chevron-down scroll-arrow"></i>
+            <a href="#brand-list" class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></a>
         </div>
     </div>
 
-    <div class="brand-list">
+    <div class="brand-list" id="brand-list">
         <ul class="brand-items">
             <li class="brand-item"><img src="assets/brands/opel.svg" alt="Opel Logo"></li>
             <li class="brand-item"><img src="assets/brands/seat.svg" alt="Seat Logo"></li>
@@ -72,7 +71,7 @@
         </ul>
     </div>
 
-    <div class="about-us">
+    <div class="about-us" id="about-us">
         <div class="img-container">
             <img src="https://images.pexels.com/photos/159293/car-engine-motor-clean-customized-159293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Kakillioğlu Otomotiv">
@@ -85,11 +84,11 @@
             <p>20'den fazla kişilik uzman kadromuzla, modern ekipmanlar ve en son teknolojiyle donatılmış atölyemizde,
                 yüksek kaliteli hizmet sağlıyoruz. Müşteri memnuniyetini ön planda tutarak, her zaman güvenilir ve
                 profesyonel bir hizmet sunmaktan gurur duyuyoruz.</p>
-            <button>İletişime Geç</button>
+            <button id="go-services-section">İletişime Geç</button>
         </div>
     </div>
 
-    <div class="services-section splide" id="splide">
+    <div class="services-section splide" id="services-section">
         <h1>43+ yıllık deneyimimize dayanarak size en iyi hizmeti sunuyoruz.</h1>
         <div class="splide__track">
             <div class="service-list splide__list">
@@ -146,7 +145,7 @@
         </div>
     </div>
 
-    <div class="contact-banner">
+    <div class="contact-banner" id="contact-banner">
         <div class="contact-banner-content">
             <div class="content-location">
                 <div class="address">
@@ -167,63 +166,67 @@
         </div>
     </div>
 
-    <div class="review-section">
+    <div class="review-section" id="review-section">
         <h2>Müşterilerimiz ne diyor?</h2>
+        <p class="desc">Gerçek deneyimlere dayanan yorumlar! Müşterilerimizin bizimle yaşadığı tecrübeleri keşfedin.</p>
         <div class="review-container">
             <div class="user-review">
-                <img src="https://i0.wp.com/www.stignatius.co.uk/wp-content/uploads/2020/10/default-user-icon.jpg?fit=415%2C415&ssl=1"
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKgPH43ERVGOoOKWABEuHYIEmRadN-c0h_L5_2mIjbfCOJZ6g=w60-h60-p-rp-mo-br100"
                     alt="Kullanıcı Profil Fotoğrafı" id="user-photo">
                 <div class="user-info">
-                    <p id="user-name">Jane Doe</p>
-                    <p id="review-source"><a href="#" id="google">Google</a> Yorumlar</p>
+                    <p id="user-name">Kadir B****</p>
+                    <p id="review-source"><a
+                            href="https://www.google.com/search?sca_esv=dc10ca3b9a9df2ee&sca_upv=1&tbm=lcl&sxsrf=ADLYWIKkNVStf3joHCMerT49-g2ka6jOVA:1726870021148&q=Kakillio%C4%9Flu+Otomotiv+Yorumlar&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDM3MrEwMLI0NjY3MTA2NjM1Mt_AyPiKUc47MTszJycz_8j8nFIF_5L83PySzDKFyPyi0tycxKJFrAQUAABL_HcaXQAAAA&rldimm=16724802933740336527&hl=tr-TR&sa=X&ved=2ahUKEwiM6LuRxNKIAxViXvEDHUafDtcQ9fQKegQIPhAF&cshid=1726870092688733&biw=1920&bih=917&dpr=1#lkt=LocalPoiReviews"
+                            id="google">Google</a> Yorumlar</p>
                     <div class="review">
-                        <p id="review">Gerçekten işlerini çok iyi yapıyorlar Asım abimin güler yüzü yeterli. Kesinlikle
-                            tercih etmelisiniz. Çok iyi çalışıyorlar.</p>
-                        <p class="hidden">devamını oku.</p>
+                        <p id="review">Yolda kaldığımda hızlıca yardımcı oldular, sağolsunlar. Aracımda sorun kalmadı,
+                            işçilik temizdi. Herkes güler yüzlü ve ilgiliydi, buradan memnun ayrıldım.</p>
                     </div>
                     <div class="rating">
                         <i class="fa-solid fa-star rating-on"></i>
                         <i class="fa-solid fa-star rating-on"></i>
                         <i class="fa-solid fa-star rating-on"></i>
                         <i class="fa-solid fa-star rating-on"></i>
-                        <i class="fa-solid fa-star rating-off"></i>
+                        <i class="fa-solid fa-star rating-on"></i>
                     </div>
-                    <p id="review-date">3 ay önce</p>
+                    <p id="review-date">5 gün önce</p>
                 </div>
             </div>
 
             <div class="user-review">
-                <img src="https://i0.wp.com/www.stignatius.co.uk/wp-content/uploads/2020/10/default-user-icon.jpg?fit=415%2C415&ssl=1"
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKpyIf_nKJ5ffbxv2vz2-CQ-eBR4y5WD1EA01-uSRizITCS-Q=w60-h60-p-rp-mo-br100"
                     alt="Kullanıcı Profil Fotoğrafı" id="user-photo">
                 <div class="user-info">
-                    <p id="user-name">Jane Doe</p>
-                    <p id="review-source"><a href="#" id="google">Google</a> Yorumlar</p>
+                    <p id="user-name">Rahmi S****</p>
+                    <p id="review-source"><a
+                            href="https://www.google.com/search?sca_esv=dc10ca3b9a9df2ee&sca_upv=1&tbm=lcl&sxsrf=ADLYWIKkNVStf3joHCMerT49-g2ka6jOVA:1726870021148&q=Kakillio%C4%9Flu+Otomotiv+Yorumlar&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDM3MrEwMLI0NjY3MTA2NjM1Mt_AyPiKUc47MTszJycz_8j8nFIF_5L83PySzDKFyPyi0tycxKJFrAQUAABL_HcaXQAAAA&rldimm=16724802933740336527&hl=tr-TR&sa=X&ved=2ahUKEwiM6LuRxNKIAxViXvEDHUafDtcQ9fQKegQIPhAF&cshid=1726870092688733&biw=1920&bih=917&dpr=1#lkt=LocalPoiReviews"
+                            id="google">Google</a> Yorumlar</p>
                     <div class="review">
-                        <p id="review">Gerçekten işlerini çok iyi yapıyorlar Asım abimin güler yüzü yeterli. Kesinlikle
-                            tercih etmelisiniz. Çok iyi çalışıyorlar.</p>
-                        <p class="hidden">devamını oku.</p>
+                        <p id="review">Arkadaşımın tavsiyesiyle buraya geldim, ilk defa aracımı burda tamir ettirdim.
+                            Yoğun olmalarına rağmen kısa sürede hallettiler. İlgililer ve işlerini gayet iyi yapıyorlar.
+                        </p>
                     </div>
                     <div class="rating">
                         <i class="fa-solid fa-star rating-on"></i>
                         <i class="fa-solid fa-star rating-on"></i>
                         <i class="fa-solid fa-star rating-on"></i>
                         <i class="fa-solid fa-star rating-on"></i>
-                        <i class="fa-solid fa-star rating-off"></i>
+                        <i class="fa-solid fa-star rating-on"></i>
                     </div>
-                    <p id="review-date">3 ay önce</p>
+                    <p id="review-date">2 hafta önce</p>
                 </div>
             </div>
 
             <div class="user-review">
-                <img src="https://i0.wp.com/www.stignatius.co.uk/wp-content/uploads/2020/10/default-user-icon.jpg?fit=415%2C415&ssl=1"
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKpeMHPNLRwU7maZj306JQ0bzJGgIb6yFiDiNLFPLgyPGHH9Q=w60-h60-p-rp-mo-br100"
                     alt="Kullanıcı Profil Fotoğrafı" id="user-photo">
                 <div class="user-info">
-                    <p id="user-name">Jane Doe</p>
-                    <p id="review-source"><a href="#" id="google">Google</a> Yorumlar</p>
+                    <p id="user-name">Murat K****</p>
+                    <p id="review-source"><a
+                            href="https://www.google.com/search?sca_esv=dc10ca3b9a9df2ee&sca_upv=1&tbm=lcl&sxsrf=ADLYWIKkNVStf3joHCMerT49-g2ka6jOVA:1726870021148&q=Kakillio%C4%9Flu+Otomotiv+Yorumlar&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDM3MrEwMLI0NjY3MTA2NjM1Mt_AyPiKUc47MTszJycz_8j8nFIF_5L83PySzDKFyPyi0tycxKJFrAQUAABL_HcaXQAAAA&rldimm=16724802933740336527&hl=tr-TR&sa=X&ved=2ahUKEwiM6LuRxNKIAxViXvEDHUafDtcQ9fQKegQIPhAF&cshid=1726870092688733&biw=1920&bih=917&dpr=1#lkt=LocalPoiReviews"
+                            id="google">Google</a> Yorumlar</p>
                     <div class="review">
-                        <p id="review">Gerçekten işlerini çok iyi yapıyorlar Asım abimin güler yüzü yeterli. Kesinlikle
-                            tercih etmelisiniz. Çok iyi çalışıyorlar.</p>
-                        <p class="hidden">devamını oku.</p>
+                        <p id="review">Aracım biraz gecikti ama sonuçta sorunsuz teslim ettiler. Fiyat da uygun, genel olarak memnun kaldım. Küçük eksikler dışında güzel iş çıkardılar.</p>
                     </div>
                     <div class="rating">
                         <i class="fa-solid fa-star rating-on"></i>
@@ -239,7 +242,7 @@
         <button><a href="#">Hepsini Görüntüle</a></button>
     </div>
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact-section">
         <img src="#" alt="Araba tamiri yapan adam.">
         <form action="#">
             <h2>Bizimle iletişime geçin.</h2>
@@ -249,39 +252,6 @@
             <input type="email" placeholder="Mail Adresi" name="email" id="email" required>
             <textarea placeholder="Mesaj" name="message" id="message" readonly></textarea>
         </form>
-    </div>
-
-    <div class="blog-section">
-        <h2>Faydalı İçerikler</h2>
-        <p id="blog-par">Aracınızı anlamanıza ve ömrünü uzatmanıza yarıyacak bilgiler.</p>
-        <div class="blog-posts">
-            <div class="post">
-                <img src="https://arabam-blog.mncdn.com/wp-content/uploads/2021/01/fren-diski1.jpg"
-                    alt="Blog Öngösterim Resmi" id="blog-img">
-                <div class="post-info">
-                    <p class="post-date">Nisan 26, 2024</p>
-                    <p class="post-title">Ani Fren Kullanımından Kaçının</p>
-                    <p class="post-description">Özellikle yaz aylarında asfalt ısındığında ani fren kullanmak, fren
-                        balatalarının aşırı ısınmasına ve ötmeye başlamasına sebep olur...</p>
-                    <p><a href="#" class="read-more">Daha Fazla</a></p>
-                    <!-- <i class="fa-solid fa-arrow-right"></i> -->
-                </div>
-            </div>
-
-            <div class="post">
-                <img src="https://www.ototasarruf.com/uploads/photos/onemlibilgiler/motor-freni-nedir.webp"
-                    alt="Blog Öngösterim Resmi" id="blog-img">
-                <div class="post-info">
-                    <p class="post-date">Mayıs 4, 2024</p>
-                    <p class="post-title">Motor Frenini Kullanın</p>
-                    <p class="post-description">Dik yokuşlardan inerken sürekli fren pedalına basmak, fren
-                        sisteminin
-                        aşırı ısınmasına ve fren balatalarının daha hızlı aşınmasına yol açar...</p>
-                    <p><a href="#" class="read-more">Daha Fazla</a></p>
-                </div>
-            </div>
-        </div>
-        <button><a href="#">Hepsini Görüntüle</a></button>
     </div>
 
     <footer>
@@ -302,6 +272,8 @@
         </ul>
         <p>2024 &#169;<a href="https://linkedin.com/in/oktaywhite/">Alvio</a></p>
     </footer>
+
+    <button onclick="goToTop()" id="goTopBtn"><i class="fa-solid fa-caret-up"></i></button>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="js/splide_slider.js"></script>

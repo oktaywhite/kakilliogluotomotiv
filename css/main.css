@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -341,6 +345,16 @@ header {
     margin-top: 125px;
 }
 
+.review-section .desc {
+    font-size: 16px;
+    color: #9C9C9C;
+    font-weight: 400;
+    margin-bottom: 70px;
+    margin-top: 10px;
+    width: 45%;
+    text-align: center;
+}
+
 .review-container {
     display: flex;
     align-items: center;
@@ -352,7 +366,6 @@ header {
 .review-section h2 {
     font-size: 28px;
     font-weight: 500;
-    margin-bottom: 70px;
 }
 
 .review-section button {
@@ -365,6 +378,11 @@ header {
     width: 225px;
     margin-top: 30px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.review-section button:hover {
+    background-color: #3b3b3b;
 }
 
 .user-review {
@@ -374,6 +392,8 @@ header {
     background-color: #F8F8F8;
     padding: 25px;
     border-radius: 5px;
+    width: 33%;
+    height: 280px;
 }
 
 #user-photo {
@@ -423,8 +443,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 2px;
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     border-radius: 2px;
     color: white;
     font-size: 12px;
@@ -436,8 +456,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 2px;
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     border-radius: 2px;
     color: #C20031;
     font-size: 12px;
@@ -507,86 +527,34 @@ header {
     margin-bottom: 60px;
 }
 
-.blog-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1400px;
-    margin: auto;
-    margin-top: 200px;
-}
-
-.blog-section h2 {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-#blog-par {
-    font-size: 19px;
-    font-style: italic;
-    font-weight: 300;
-    color: #878787;
-    margin-top: 10px;
-}
-
-.blog-posts {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    gap: 20px;
-}
-
-.post {
-    display: flex;
+#goTopBtn {
+    position: fixed;
+    background-color: #FF0040;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: auto;
-    gap: 20px;
-}
-
-#blog-img {
-    object-fit: cover;
-    width: 300px;
-    height: 175px;
-    border-radius: 10px;
-}
-
-.post-description {
-    max-width: 400px;
-    font-size: 15px;
-    color: #626262;
-    margin-top: 10px;
-    margin-bottom: 7px;
-}
-
-.post-date {
-    color: #FF0040;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.post-title {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.read-more {
-    color: #FF0040;
-    font-size: 15px;
-    text-decoration: underline;
-    font-weight: 600;
-}
-
-.blog-section button{
-    border: none;
-    padding: 10px 20px 10px 20px;
-    font-size: 16px;
-    background-color: #FF0040;
-    color: white;
-    border-radius: 3px;
-    width: 200px;
+    width: 65px;
+    height: 65px;
+    font-size: 1.3rem;
+    border: solid 3px #fff;
     cursor: pointer;
-    margin: auto;
-    margin-top: 60px;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out, background-color 0.3s ease;
+}
+
+#goTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#goTopBtn:hover {
+    background-color: rgb(223, 23, 73);;
 }
