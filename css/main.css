@@ -51,7 +51,7 @@ header {
     color: #3b3b3b;
 }
 
-.navbar-items .active {
+.navbar .navbar-items .active {
     color: #000;
     font-weight: 500;
 }
@@ -111,7 +111,7 @@ header {
     justify-content: center;
     width: 150px;
     height: 45px;
-    font-size: 18px;
+    font-size: 17px;
     color: #FFF;
     background-color: #454955;
     border: none;
@@ -542,8 +542,8 @@ header {
     border: solid 3px #fff;
     cursor: pointer;
     z-index: 999;
-    right: 20px;
-    bottom: 20px;
+    right: 100px;
+    bottom: 25px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(100px);
@@ -623,4 +623,12 @@ footer {
     z-index: 999;
     margin-top: 60px;
     cursor: default;
+}
+
+.bar-hide {
+    display: none;
+}
+
+.mobile-hidden {
+    display: none;
 }

@@ -24,6 +24,9 @@
     <!-- splide css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
+    <!-- 479px -->
+    <link rel="stylesheet" href="css/479px.css">
+
 </head>
 
 <body>
@@ -32,15 +35,29 @@
             <div class="left-side">
                 <a href="#"><img id="logo" src="assets/logo_black.svg" alt="Kakillioğlu Otomotiv Logo"></a>
                 <ul class="navbar-items">
-                    <li class="navbar-item active">Ana Sayfa</li>
+                    <li class="navbar-item active"><a href="#navbar">Ana Sayfa</a></li>
                     <li class="navbar-item"><a href="#brand-list">Hakkımızda</a></li>
                     <li class="navbar-item"><a href="#go-services-section">Hizmetler</a></li>
                     <li class="navbar-item"><a href="#contact-banner">Yorumlar</a></li>
+                    <i class="fa-solid fa-bars bar-hide" id="bar-hide"></i>
                 </ul>
             </div>
-            <button><a href="#contact-section">İletişim</a></button>
         </div>
     </header>
+
+    <div class="mobile-navbar mobile-hidden" id="mobile-navbar">
+        <ul class="navbar-items">
+            <div>
+                <img src="assets/logo_white.svg" alt="Logo">
+                <i class="fa-solid fa-bars bar-hide" id="bar-hide-mobile"></i>
+            </div>
+            <li class="navbar-item active"><a href="#navbar">Ana Sayfa</a></li>
+            <li class="navbar-item"><a href="#brand-list">Hakkımızda</a></li>
+            <li class="navbar-item"><a href="#go-services-section">Hizmetler</a></li>
+            <li class="navbar-item"><a href="#contact-banner">Yorumlar</a></li>
+        </ul>
+    </div>
+
     <div class="main-section" id="main-section">
         <div class="main-content">
             <div class="left-side">
@@ -48,7 +65,7 @@
                 <p>Aracınızın bakım, onarım ve servis ihtiyaçlarını uzman ekibimizle güvenle karşılıyoruz. Detaylı
                     hizmetlerimiz
                     için <span>Hizmetler</span> sekmesine göz atın.</p>
-                <button><a href="#main-section">Araç Listesi</a></button>
+                <button><a href="#services-section">Konum</a></button>
             </div>
             <img src="https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Car Engine">
@@ -271,6 +288,9 @@
     </footer>
 
     <button onclick="goToTop()" id="goTopBtn"><i class="fa-solid fa-caret-up"></i></button>
+
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-b5e12163-70f5-4573-8d5f-c231d1eca93e" data-elfsight-app-lazy></div>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="js/splide_slider.js"></script>
