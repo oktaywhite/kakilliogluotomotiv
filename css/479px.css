@@ -6,9 +6,7 @@
 
 @media (max-width: 479px) {
 
-    .main-section,
     .brand-list,
-    .about-us,
     .services-section,
     .contact-banner,
     .review-section,
@@ -54,18 +52,18 @@
         font-size: 26px;
         z-index: 999999999;
         gap: 50px;
-    }
 
-    .mobile-show .navbar-items div {
-        display: flex;
-        align-items: center;
-        margin-bottom: 75px;
-        gap: 50px;
-        z-index: 9999999999;
-    }
+        div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 75px;
+            gap: 50px;
+            z-index: 9999999999;
+        }
 
-    .mobile-show .navbar-items i {
-        font-size: 28px;
+        i {
+            font-size: 28px;
+        }
     }
 
     .mobile-show .active {
@@ -74,5 +72,71 @@
 
     .mobile-show .navbar-items .navbar-item:hover {
         color: #fff;
+    }
+
+    .main-content img {
+        display: none;
+    }
+
+    .main-content .left-side {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -35px;
+
+        h1 {
+            font-size: 24px;
+            width: 80%;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            width: 80%;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        button {
+            font-size: 16px;
+            margin-bottom: -10px;
+        }
+    }
+
+    .about-us {
+        margin-top: 100px;
+        flex-direction: column;
+
+        .about-us-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin: auto;
+        }
+
+        .img-container {
+            width: 80%;
+            height: 150px;
+            margin: auto;
+            margin-bottom: -20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    #goTopBtn {
+        right: 25px;
+        bottom: 105px;
+        width: 55px;
+        height: 55px;
     }
 }
