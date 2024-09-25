@@ -7,7 +7,6 @@
 @media (max-width: 479px) {
 
     .brand-list,
-    .services-section,
     .contact-banner,
     .review-section,
     .user-review,
@@ -138,5 +137,29 @@
         bottom: 105px;
         width: 55px;
         height: 55px;
+    }
+
+    .services-section {
+        width: 80%;
+
+        h1 {
+            font-size: 20px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+
+    .services-section .service-item i {
+        display: none;
+    }
+
+    .service-text {
+        h1 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 }

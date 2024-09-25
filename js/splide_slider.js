@@ -8,6 +8,11 @@ var splide = new Splide('.splide', {
     interval: 3000,
     pauseOnHover: true,
     gap: '20px',
+    breakpoints: {
+        479: {
+            perPage: 1,
+        }
+    }
 } );
 
 splide.mount();
