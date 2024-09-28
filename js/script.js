@@ -1,12 +1,12 @@
-const mybutton = document.getElementById("goTopBtn");
+const goTopBtn = document.getElementById("goTopBtn");
 
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.classList.add("show");
+    goTopBtn.classList.add("show");
   } else {
-    mybutton.classList.remove("show");
+    goTopBtn.classList.remove("show");
   }
 }
 
