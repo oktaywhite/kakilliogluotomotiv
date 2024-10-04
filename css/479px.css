@@ -21,6 +21,7 @@
     .bar-hide {
         display: block;
         font-size: 24px;
+        color: #454955;
     }
 
     .navbar {
