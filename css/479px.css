@@ -166,6 +166,22 @@
         }
     }
 
+    .review-section {
+
+        margin-top: 75px;
+        margin-bottom: 75px;
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .desc {
+            width: 85%;
+            font-size: 16px;
+        }
+    }
+
     .review-container {
         display: flex;
         flex-direction: column;
@@ -174,9 +190,15 @@
 
         .user-review {
             width: 85%;
+            height: 350px;
 
-            .review-sourcer {
-                margin: 100px 0;
+            img {
+                margin-top: 15px;
+            }
+
+            .user-info {
+                margin-top: 25px;
+                margin-bottom: 25px;
             }
         }
     }
