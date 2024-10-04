@@ -30,7 +30,10 @@
         justify-content: center;
         margin: auto;
         margin-top: 20px;
-        border: solid 2px red
+
+        .left-side {
+            gap: 150px;
+        }
     }
 
     .mobile-show {
