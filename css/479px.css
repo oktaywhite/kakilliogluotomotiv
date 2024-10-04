@@ -6,8 +6,7 @@
 
 @media (max-width: 479px) {
 
-    .brand-list,
-    footer {
+    .brand-list {
         display: none;
     }
 
@@ -201,6 +200,40 @@
                 margin-bottom: 25px;
             }
         }
+    }
+
+    .footer {
+
+        width: 100%;
+        flex-direction: column;
+        height: 325px;
+        text-align: center;
+
+        .brands {
+            display: none;
+        }
+
+        .left-side {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #footer-address {
+            width: 85%;
+            margin-top: 30px;
+        }
+
+        #footer-phone {
+            width: 85%;
+        }
+
+        #alvio {
+            margin-bottom: 50px;
+            width: 85%;
+        }
+        
     }
 
 }
