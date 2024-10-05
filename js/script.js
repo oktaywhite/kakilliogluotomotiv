@@ -24,10 +24,11 @@ const hideBarMobile = document.getElementById('bar-hide-mobile');
 hideBar.addEventListener('click', function () {
   mobileNavbar.classList.remove('mobile-hidden');
   mobileNavbar.classList.add('mobile-show');
+  document.body.style.overflow = 'hidden';
 })
 
 hideBarMobile.addEventListener('click', function () {
   mobileNavbar.classList.remove('mobile-show');
   mobileNavbar.classList.add('mobile-hidden');
+  document.body.style.overflow = 'auto';
 })
-
